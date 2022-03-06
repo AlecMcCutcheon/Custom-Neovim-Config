@@ -1,6 +1,24 @@
 # Custom NeoVim Config
 A modded fork of LunarVim/Neovim-from-scratch
 
+## Config Install Notes:
+
+- Scoop install nvim
+
+- Git clone Rep into your ~/AppData/Local/nvim
+
+- Make a nvim_profile.ps1 File, and a Settings.ps1 File in ~/.config/powershell/ Make the dir if it does not exist.
+
+I made the .ps1 files so that my normal Windows Terminal Pwsh can have a config, The Nvim Pwsh can have a config, and the settings.ps1 is where I have all my aliases for both.
+
+## My Config Changes:
+
+- Changed Nav Keymaps from: Ctrl-h,j,k,l to Alt-Left,Down,Up,Right
+
+- Tweaked Alpha Menu, Added: Pwsh Terminal, File Explorer, Open WhichKey Menu (Space Menu), Changed Config Menu Binding to ~/appdata/local/nvim/init.lua
+
+- Replaced Keymap of Crtl-\ to Open Pwsh instead of CMD (Hacky Method WIP)  
+
 ## Try out this config
 
 Make sure to remove or move your current `nvim` directory
