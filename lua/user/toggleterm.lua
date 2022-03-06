@@ -59,12 +59,12 @@ function _NODE_TOGGLE()
 	node:toggle()
 end
 
-local hpwsh = Terminal:new({ dir = "C:/Users/Admin", direction = "horizontal", cmd = 'pwsh -noprofile -noexit -nologo -f "C:/Users/Admin/.config/powershell/nvim_profile.ps1"', hidden = true })
+local hpwsh = Terminal:new({ dir = "~", direction = "horizontal", cmd = 'pwsh -noprofile -noexit -nologo -f "%USERPROFILE%/.config/powershell/nvim_profile.ps1"', hidden = true })
 function _H_PWSH_TOGGLE()
 	hpwsh:toggle()
 end
 
-local vpwsh = Terminal:new({ dir = "C:/Users/Admin", direction = "vertical", cmd = 'pwsh -noprofile -noexit -nologo -f "C:/Users/Admin/.config/powershell/nvim_profile.ps1"', hidden = true })
+local vpwsh = Terminal:new({ dir = "~", direction = "vertical", cmd = 'pwsh -noprofile -noexit -nologo -f "%USERPROFILE%/.config/powershell/nvim_profile.ps1"', hidden = true })
 function _V_PWSH_TOGGLE()
 	vpwsh:toggle()
 end

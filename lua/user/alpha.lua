@@ -16,13 +16,13 @@ dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("e", "  File Explorer", ":WhichKey<CR><SPACE>e"),
-	dashboard.button("z", "  Pwsh Terminal", ":lua _PWSH_TOGGLE()<CR>"),
+	dashboard.button("z", "  Pwsh Terminal", ":lua _H_PWSH_TOGGLE()<CR>"),
 	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
-	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
+	dashboard.button("c", "  Configuration", ":e ~/AppData/Local/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-  dashboard.button("SPACE", "  Open WhichKey Menu    ", ":WhichKey<CR><SPACE>"),
+  dashboard.button("SPACE", "  Open WhichKey Menu    ", ":WhichKey<CR><SPACE>"),
 }
 
 dashboard.section.header.opts.hl = "Include"
