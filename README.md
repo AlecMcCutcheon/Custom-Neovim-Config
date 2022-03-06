@@ -9,7 +9,7 @@ A modded fork of LunarVim/Neovim-from-scratch
 
 - Make a nvim_profile.ps1 File, and a Settings.ps1 File in ~/.config/powershell/ Make the dir if it does not exist.
 
-I made the .ps1 files so that my normal Windows Terminal Pwsh can have a config, The Nvim Pwsh can have a config, and the settings.ps1 is where I have all my aliases for both.
+- I made the .ps1 files so that my normal Windows Terminal Pwsh can have a config, The Nvim Pwsh can have a config, and the settings.ps1 is where I have all my aliases for both.
 
 ## My Config Changes:
 
