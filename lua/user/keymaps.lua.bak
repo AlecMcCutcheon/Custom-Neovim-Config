@@ -18,11 +18,8 @@ vim.g.maplocalleader = " "
 --   term_mode = "t",
 --   command_mode = "c",
 
--- PWSH TOGGLE --
-keymap("n", [[<c-\>]], ":lua _H_PWSH_TOGGLE()<CR>", opts)
-keymap("i", [[<c-\>]], "<C-c>:lua _H_PWSH_TOGGLE()<CR>", opts)
-
 -- Normal --
+keymap("n", [[<c-\>]], ":lua _PWSH_TOGGLE()", opts)
 -- Better window navigation
 keymap("n", "<A-LEFT>", "<C-w>h", opts)
 keymap("n", "<A-DOWN>", "<C-w>j", opts)

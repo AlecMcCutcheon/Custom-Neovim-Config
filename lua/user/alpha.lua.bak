@@ -16,15 +16,27 @@ dashboard.section.buttons.val = {
 	dashboard.button("f", "  Find file", ":Telescope find_files <CR>"),
 	dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 	dashboard.button("e", "  File Explorer", ":WhichKey<CR><SPACE>e"),
-	dashboard.button("z", "  Pwsh Terminal", ":lua _PWSH_TOGGLE()<CR>"),
+	dashboard.button("z", "  Pwsh", ":lua _PWSH_TOGGLE()"),
 	dashboard.button("p", "  Find project", ":Telescope projects <CR>"),
 	dashboard.button("r", "  Recently used files", ":Telescope oldfiles <CR>"),
 	dashboard.button("t", "  Find text", ":Telescope live_grep <CR>"),
 	dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
 	dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
-  dashboard.button("SPACE", "  Open WhichKey Menu    ", ":WhichKey<CR><SPACE>"),
+    dashboard.button("SPACE", "  Open Main Menu    ", ":WhichKey<CR><SPACE>"),
 }
 
+local function footer()
+-- NOTE: requires the fortune-mod package to work
+	-- local handle = io.popen("fortune")
+	-- local fortune = handle:read("*a")
+	-- handle:close()
+	-- return fortune
+	return "chrisatmachine.com"
+end
+
+dashboard.section.footer.val = footer()
+
+dashboard.section.footer.opts.hl = "Type"
 dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
