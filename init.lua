@@ -19,6 +19,4 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
-require('telescope').load_extension('bookmarks')
-
-
+require "user.colorizer"
