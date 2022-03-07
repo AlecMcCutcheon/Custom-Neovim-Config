@@ -1,8 +1,11 @@
 # Custom NeoVim Config
-A modded fork of LunarVim/Neovim-from-scratch
+
+A modded fork of LunarVim/Neovim-from-scratch which is better windows compatibility
 
 ## Config Install Notes:
 
+- Install git
+- Scoop install ripgrep
 - Scoop install nvim
 
 - Git clone Rep into your ~/AppData/Local/nvim
