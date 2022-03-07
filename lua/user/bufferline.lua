@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+
 bufferline.setup {
 	options = {
 		indicator_icon = ' ',
@@ -13,7 +14,12 @@ bufferline.setup {
 		right_mouse_command = "Bdelete! %d",
 		left_trunc_marker = '',
     	right_trunc_marker = '',
-		offsets = {{filetype = "NvimTree", text = "EXPLORER", text_align = "center"}},
+		offsets = {
+
+    {filetype = "NvimTree", text = "EXPLORER", text_align = "center"},
+    {filetype = "minimap", text = "MINIMAP", text_align = "center"}
+
+    },
 		show_tab_indicators = true,
 		show_close_icon = false
 	},

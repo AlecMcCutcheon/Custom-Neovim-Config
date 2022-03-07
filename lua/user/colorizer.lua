@@ -4,9 +4,10 @@ if not status_ok then
 end
 
 colorizer.setup {
-	'*';
+	'*',
   "!alpha", 
   "!dashboard", 
   "!NvimTree", 
+  "!minimap",
   "!Outline"
 }

@@ -60,7 +60,10 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tyru/open-browser.vim"
   use "norcalli/nvim-colorizer.lua" 
-  
+
+  -- MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
+  --use "wfxr/minimap.vim"
+
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use 'Mofiqul/vscode.nvim'

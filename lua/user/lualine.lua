@@ -8,7 +8,7 @@ lualine.setup {
     theme = vscode,
     component_separators = '',
     section_separators = { left = '', right = '' },
-    disabled_filetypes = { "alpha", "dashboard", "NvimTree", "Outline" },
+    disabled_filetypes = { "minimap", "alpha", "dashboard", "NvimTree", "Outline" },
   },
   sections = {
     lualine_a = {
