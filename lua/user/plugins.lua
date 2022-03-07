@@ -58,6 +58,7 @@ return packer.startup(function(use)
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
+  use "tyru/open-browser.vim"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
@@ -88,6 +89,13 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use {
+  'dhruvmanila/telescope-bookmarks.nvim',
+    -- Uncomment if the selected browser is Firefox
+    -- requires = {
+    --   'tami5/sqlite.lua',
+    -- }
+  }
 
   -- Treesitter
   use {

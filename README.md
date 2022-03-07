@@ -15,7 +15,7 @@ A modded fork of LunarVim/Neovim-from-scratch
 
 - Changed Nav Keymaps from: Ctrl-h,j,k,l to Alt-Left,Down,Up,Right
 
-- Tweaked Alpha Menu, Added: Pwsh Terminal, File Explorer, Open WhichKey Menu (Space Menu), Changed Config Menu Binding to ~/appdata/local/nvim/init.lua
+- Tweaked Alpha Menu, Added: Pwsh Terminal, File Explorer, Plugin Config ,Open WhichKey Menu (Space Menu), Changed Config Menu Binding to ~/appdata/local/nvim/init.lua
 
 - Replaced Keymap of Crtl-\ to Open Pwsh instead of CMD (Hacky Method WIP)  
 
