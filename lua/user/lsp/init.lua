@@ -18,4 +18,5 @@ require 'colorizer'.setup {
   'temp';
   'js';
   'lua';
+  'json';
 }
