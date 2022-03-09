@@ -24,3 +24,4 @@ require "user.colorizer"
 --MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
 --require "user.minimap"
 
+

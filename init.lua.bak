@@ -19,6 +19,17 @@ require "user.indentline"
 require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
-require('telescope').load_extension('bookmarks')
-lua require'colorizer'.setup()
+require "user.colorizer"
+
+--MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
+--require "user.minimap"
+ 
+system(
+
+  if filereadable("~/_vimrc")
+    echo "testing"
+  endif
+
+)
+
 
