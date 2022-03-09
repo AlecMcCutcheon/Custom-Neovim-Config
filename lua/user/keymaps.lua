@@ -22,6 +22,13 @@ vim.g.maplocalleader = " "
 keymap("n", [[<c-\>]], ":lua _H_PWSH_TOGGLE()<CR>", opts)
 keymap("i", [[<c-\>]], "<C-c>:lua _H_PWSH_TOGGLE()<CR>", opts)
 
+-- Integrated Terminal --
+keymap("n", [[kj]], ":CocCommand powershell.toggleTerminal<CR>", opts)
+keymap("i", [[kj]], "<C-c>:CocCommand powershell.toggleTerminal<CR>", opts)
+
+keymap("n", [[rt]], ":CocCommand powershell.execute<CR>", opts)
+keymap("i", [[rt]], "<C-c>:CocCommand powershell.execute<CR>", opts)
+--keymap("v", [[rt]], "rCocCommand powershell.evaluateSelection<CR>", opts)
 -- Normal --
 -- Better window navigation
 keymap("n", "<A-LEFT>", "<C-w>h", opts)
@@ -45,7 +52,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
+keymap("i", "qe", "<ESC>", opts)
+keymap("i", "qwe", "<ESC>", opts)
+keymap("n", "qe", "i", opts)
+keymap("n", "qwe", "i", opts)
 
 -- Visual --
 -- Stay in indent mode

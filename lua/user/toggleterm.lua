@@ -34,7 +34,8 @@ toggleterm.setup({
 function _G.set_terminal_keymaps()
   local opts = {noremap = true}
   vim.api.nvim_buf_set_keymap(0, 't', '<esc>', [[<C-\><C-n>]], opts)
-  vim.api.nvim_buf_set_keymap(0, 't', 'jk', [[<C-\><C-n>]], opts)
+  vim.api.nvim_buf_set_keymap(0, 't', 'qwe', [[<C-\><C-n>]], opts)
+  vim.api.nvim_buf_set_keymap(0, 't', 'qe', [[<C-\><C-n>]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<A-LEFT>', [[<C-\><C-n><C-W>h]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<A-DOWN>', [[<C-\><C-n><C-W>j]], opts)
   vim.api.nvim_buf_set_keymap(0, 't', '<A-UP>', [[<C-\><C-n><C-W>k]], opts)
@@ -61,7 +62,10 @@ end
 
 local hpwsh = Terminal:new({ dir = "~/AppData/Local/nvim", direction = "horizontal", cmd = 'pwsh -noprofile -noexit -nologo -f "%USERPROFILE%/.config/powershell/nvim_profile.ps1"', hidden = true })
 function _H_PWSH_TOGGLE()
-	hpwsh:toggle()
+
+--vim.cmd [[]]
+
+hpwsh:toggle()
 end
 
 local vpwsh = Terminal:new({ dir = "~/AppData/Local/nvim", direction = "vertical", cmd = 'pwsh -noprofile -noexit -nologo -f "%USERPROFILE%/.config/powershell/nvim_profile.ps1"', hidden = true })
