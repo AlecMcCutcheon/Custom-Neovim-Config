@@ -11,7 +11,7 @@ toggleterm.setup({
       return vim.o.columns * 0.4
     end
   end,
-	open_mapping = [[<c-0>]],
+	open_mapping = [[kj]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = vim.o.background == "dark",

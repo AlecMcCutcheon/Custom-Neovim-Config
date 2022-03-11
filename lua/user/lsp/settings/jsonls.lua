@@ -5,7 +5,7 @@ if status_ok then
 end
 
 local schemas = {
-  {
+   {
     description = "TypeScript compiler configuration file",
     fileMatch = {
       "tsconfig.json",

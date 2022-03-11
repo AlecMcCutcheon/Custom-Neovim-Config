@@ -5,6 +5,7 @@ end
 
 local snip_status_ok, luasnip = pcall(require, "luasnip")
 if not snip_status_ok then
+   print(luasnip)
   return
 end
 
@@ -74,6 +75,7 @@ cmp.setup {
         luasnip.expand_or_jump()
       elseif check_backspace() then
         fallback()
+
       else
         fallback()
       end

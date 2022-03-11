@@ -60,7 +60,17 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tyru/open-browser.vim"
   use "norcalli/nvim-colorizer.lua" 
-  use {'neoclide/coc.nvim', branch = 'release'}
+    
+  --use {
+  --'neoclide/coc.nvim',
+  --branch = 'release',
+  --ft = 'ps1',
+  --config = function()
+  --  vim.cmd('source $HOME/AppData/Local/nvim/coc.vim')
+  --  require('cmp').setup.buffer { enabled = false }
+  --end
+--}
+
   -- MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
   --use "wfxr/minimap.vim"
 
@@ -82,6 +92,7 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+  use "AlecMcCutcheon/powershell-snippets" --pwsh snippets
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
