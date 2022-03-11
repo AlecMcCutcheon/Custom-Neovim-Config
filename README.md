@@ -1,6 +1,6 @@
 # Custom NeoVim Config
 
-A modded fork of LunarVim/Neovim-from-scratch which is better windows compatibility
+A modded fork of LunarVim/Neovim-from-scratch wfor better windows compatibility
 
 ## Config Install Notes:
 
