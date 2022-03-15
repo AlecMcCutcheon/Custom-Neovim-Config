@@ -60,7 +60,7 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tyru/open-browser.vim"
   use "norcalli/nvim-colorizer.lua" 
-    
+  use "jbyuki/instant.nvim" 
   --use {
   --'neoclide/coc.nvim',
   --branch = 'release',

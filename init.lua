@@ -20,7 +20,9 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
+--require "user.instant"
 
+vim.cmd [[ let g:instant_username = "MixtapeXD" ]]
 
 local status_ok, lsp_installer = pcall(require, "nvim-lsp-installer")
 if not status_ok then
