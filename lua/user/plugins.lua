@@ -1,5 +1,5 @@
 local fn = vim.fn
-
+ 
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -60,25 +60,23 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tyru/open-browser.vim"
   use "norcalli/nvim-colorizer.lua" 
+  
+  -- Coop Editing
   use "jbyuki/instant.nvim" 
-  --use {
-  --'neoclide/coc.nvim',
-  --branch = 'release',
-  --ft = 'ps1',
-  --config = function()
-  --  vim.cmd('source $HOME/AppData/Local/nvim/coc.vim')
-  --  require('cmp').setup.buffer { enabled = false }
-  --end
---}
-
-  -- MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
-  --use "wfxr/minimap.vim"
+ 
+  -- Powershell Plugin
+  use {
+  'neoclide/coc.nvim',
+  branch = 'release',
+  ft = 'ps1',
+  config = function()
+    require('cmp').setup.buffer { enabled = false }
+  end
+  }
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use 'Mofiqul/vscode.nvim'
-  use "lunarvim/darkplus.nvim"
-  use "xiyaowong/nvim-transparent"
 
   -- cmp plugins
 
@@ -92,7 +90,6 @@ return packer.startup(function(use)
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  use "AlecMcCutcheon/powershell-snippets" --pwsh snippets
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
