@@ -25,12 +25,12 @@ bufferline.setup {
 	},
 	highlights = {
 		fill = {
-			guifg = {attribute = "fg", highlight = "Normal"},
-			guibg = {attribute = "bg", highlight = "StatusLineNC"},
+			guifg = {attribute = "fg", highlight = "StatusLineNC"},
+			guibg = {attribute = "bg", highlight = "Title"},
 		},
 		background = {
 			guifg = {attribute = "fg", highlight = "Normal"},
-			guibg = {attribute = "bg", highlight = "StatusLine"}
+			guibg = {attribute = "bg", highlight = "StatusLineNC" }
 		},
 		buffer_visible = {
 			gui = "",
@@ -44,7 +44,7 @@ bufferline.setup {
 		},
 		separator = {
 			guifg = {attribute = "bg", highlight = "Normal"},
-			guibg = {attribute = "bg", highlight = "StatusLine"},
+			guibg = {attribute = "bg", highlight = "StatusLineNC"},
 		},
 		separator_selected = {
             guifg = {attribute = "fg", highlight="Special"},
@@ -56,7 +56,7 @@ bufferline.setup {
 		},
 		close_button = {
 			guifg = {attribute = "fg", highlight = "Normal"},
-			guibg = {attribute = "bg", highlight = "StatusLine"}
+			guibg = {attribute = "bg", highlight = "StatusLineNC"}
 		},
 		close_button_selected = {
             guifg = {attribute = "fg", highlight="normal"},

@@ -20,6 +20,5 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
---require "user.coc"
 vim.cmd [[ let g:instant_username = "MixtapeXD" ]]
 vim.cmd [[ let g:coc_global_extensions=[ 'coc-powershell', 'coc-snippets' ] ]]

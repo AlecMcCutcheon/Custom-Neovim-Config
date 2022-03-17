@@ -31,7 +31,35 @@ if not config_status_ok then
   return
 end
 
+local lib_status_ok, lib = pcall(require, "nvim-tree.lib")
+if not lib_status_ok then
+  return
+end
+
 local tree_cb = nvim_tree_config.nvim_tree_callback
+
+if not bookmarks then
+local bookmarks = {}
+end
+  
+local function add_mark() 
+  local node = lib.get_node_at_cursor()
+  bookmarks[node.absolute_path] = node.absolute_path
+end
+
+local function remove_mark()
+  local node = lib.get_node_at_cursor()
+  bookmarks[node.absolute_path] = nil
+end
+
+local function Jump_to_dir_cursor()
+local node = lib.get_node_at_cursor()
+  lib.change_dir(node.absolute_path)
+end
+
+local function jump_to_dir(dirname)
+  lib.change_dir(dirname)
+end
 
 nvim_tree.setup {
   disable_netrw = true,

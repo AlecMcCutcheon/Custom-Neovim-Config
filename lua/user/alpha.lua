@@ -28,9 +28,24 @@ dashboard.section.buttons.val = {
   dashboard.button("q", "  Quit Neovim", ":qa<CR>"),
   }
 
-dashboard.section.header.opts.hl = "Include"
-dashboard.section.buttons.opts.hl = "Keyword"
+local function footer()
+  local plugins_count = vim.fn.len(vim.fn.globpath("~/AppData/Local/nvim-data/site/pack/packer/start", "*", 0, 1))
+  local date = os.date("  %m-%d-%Y")
+  local version = vim.version()
+  local nvim_version_info = "   v" .. version.major .. "." .. version.minor .. "." .. version.patch
+  return date .. "   Plugins " .. plugins_count .. nvim_version_info
+end
+
+dashboard.section.footer.val = footer()
+dashboard.section.footer.opts.hl = "Question"
+dashboard.section.header.opts.hl = "Question"
+dashboard.section.buttons.opts.hl = "Title"
 
 dashboard.opts.opts.noautocmd = true
--- vim.cmd([[autocmd User AlphaReady echo 'ready']])
+vim.cmd [[
+  autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
+  autocmd FileType alpha set showtabline=0 laststatus=0 noruler | au BufUnload <buffer> set showtabline=2 ruler laststatus=2
+]]
 alpha.setup(dashboard.opts)
+
+

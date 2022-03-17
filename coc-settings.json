@@ -17,6 +17,7 @@
 	"suggest.languageSourcePriority": 99,
 	"suggest.triggerCompletionWait": 50,
 	"suggest.acceptSuggestionOnCommitCharacter": true,
+  "suggest.preferCompleteThanJumpPlaceholder": true,
 	"suggest.completionItemKindLabels": {
 	  "default": "",
       "Text": "",
