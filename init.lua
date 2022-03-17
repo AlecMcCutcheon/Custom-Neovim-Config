@@ -21,6 +21,7 @@ require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
 vim.cmd [[ hi statusline guibg=NONE gui=NONE ]]
+vim.cmd [[ hi statuslineNC guibg=NONE gui=NONE ]]
 vim.cmd [[ set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾ ]]
 vim.cmd [[ let g:instant_username = "MixtapeXD" ]]
 vim.cmd [[ let g:coc_global_extensions=[ 'coc-powershell', 'coc-snippets' ] ]]

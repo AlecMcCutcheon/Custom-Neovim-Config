@@ -17,7 +17,7 @@ bufferline.setup {
 		offsets = {
 
     {filetype = "NvimTree", text = "EXPLORER", text_align = "center"},
-    {filetype = "minimap", text = "MINIMAP", text_align = "center"}
+    {filetype = "toggleterm", text = "Terminal", text_align = "center"}
 
     },
 		show_tab_indicators = true,
