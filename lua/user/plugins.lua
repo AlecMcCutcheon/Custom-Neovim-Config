@@ -60,7 +60,15 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "tyru/open-browser.vim"
   use "norcalli/nvim-colorizer.lua" 
-  
+
+  -- Sessions
+  use {'rmagatti/auto-session'}
+
+  use {
+  'rmagatti/session-lens',
+  requires = {'rmagatti/auto-session', 'nvim-telescope/telescope.nvim'},
+  }
+ 
   -- Coop Editing
   use "jbyuki/instant.nvim" 
  

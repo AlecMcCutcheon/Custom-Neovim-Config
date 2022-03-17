@@ -20,16 +20,8 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.colorizer"
-
---MINIMAP is Disabled for now as there's too many bugs/conflicts with other plugins
---require "user.minimap"
- 
-system(
-
-  if filereadable("~/_vimrc")
-    echo "testing"
-  endif
-
-)
-
-
+vim.cmd [[ hi statusline guibg=NONE gui=NONE ]]
+vim.cmd [[ hi statuslineNC guibg=NONE gui=NONE ]]
+vim.cmd [[ set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾ ]]
+vim.cmd [[ let g:instant_username = "MixtapeXD" ]]
+vim.cmd [[ let g:coc_global_extensions=[ 'coc-powershell', 'coc-snippets' ] ]]

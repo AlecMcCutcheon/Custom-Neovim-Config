@@ -25,3 +25,4 @@ vim.cmd [[ hi statuslineNC guibg=NONE gui=NONE ]]
 vim.cmd [[ set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾ ]]
 vim.cmd [[ let g:instant_username = "MixtapeXD" ]]
 vim.cmd [[ let g:coc_global_extensions=[ 'coc-powershell', 'coc-snippets' ] ]]
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal"
